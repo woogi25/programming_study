@@ -1,0 +1,11 @@
+int x = 5;
+int y = 0;
+int result = 5 / 0; 	//예외 발생
+
+
+5 / 0.0 -> Infinity
+5 % 0.0 -> NaN
+
+확인 방법
+boolean result = Double.isInfinite(변수);
+boolean result = Double.isNaN(변수);
