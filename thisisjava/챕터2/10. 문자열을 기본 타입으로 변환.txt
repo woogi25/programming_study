@@ -1,0 +1,33 @@
+자바에서 문자열을 기본 타입으로 변환하는 방법
+
+1. String -> byte
+String str = "10";
+byte value = Byte.parseByte(str);
+
+2. String -> short
+String str = "200";
+short value = Short.parseShort(str);
+
+3. String -> int
+String str = "300000";
+int value = Integer.paseInt(str);
+
+4. String -> long
+String str = "40000000000";
+long value = Long.parseLong(str);
+
+5. String -> float
+String str = "12.345";
+float value = Float.parseFloat(str);
+
+6. String -> double
+String = "12.345";
+double value = Double.parseDouble(str)
+
+7. String -> boolean
+String str = "true";
+boolean value = Boolean.parseBoolean(str);
+
+
+기본 타입의 값을 문자열로 변경하는 방법
+String str = String.valueOf(기본타입값);

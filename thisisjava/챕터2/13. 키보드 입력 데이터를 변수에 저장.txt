@@ -1,0 +1,5 @@
+import java.util.Scanner;
+
+Scanner scanner = new Scanner(System.in);
+String inputData = scanner.nextLine();
+scanner.nextLine()은 enter를 입력하기 전까지 대기 상태가 되며, enter 키가 입력되면 지금까지 입력된 모든 내용을 문자열로 읽습니다.
