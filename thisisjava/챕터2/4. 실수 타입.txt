@@ -1,0 +1,5 @@
+float, 4byte, 32bit, 7자리
+double, 8byte, 64bit, 15자리
+
+double이 float 보다 정밀도가 높습니다.
+float과 double 둘 다 부동 소수점 방식으로 메모리에 저장됩니다.

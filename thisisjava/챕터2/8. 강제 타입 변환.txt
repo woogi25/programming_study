@@ -1,0 +1,22 @@
+캐스팅이라고도 합니다.
+
+int -> byte
+int Value = 10;
+byte byteValue = (byte) intValue;	//강제 타입 변환
+
+
+long -> int
+long longValue = 300;
+int intValue = (int) longValue;	//300이 그대로 유지
+
+
+int -> char
+int intValue = 65;
+char CharValue = (char) intValue;
+System.out.println(charValue);	//'A'가 출력
+
+
+실수 -> 정수
+소수점 이하 부분은 버려지고, 정수 부분만 저장됩니다.
+double doubleValue = 3.14;
+int intValue = (int) doubleValue;	//intValue는 정수 부분인 3만 저장
