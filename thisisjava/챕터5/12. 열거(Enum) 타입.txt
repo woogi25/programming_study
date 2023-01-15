@@ -1,0 +1,12 @@
+한정된 값을 갖는 타입을 열거 타입이라고 합니다.
+이름은 첫 문자를 대문자로 하고 캐멀 스타일로 작성합니다.
+Week.java
+MemberGrade.java
+ProductKind.java
+
+열거 상수 : 열거 타입으로 사용할 수 있는 한정된 값을 말합니다.
+관례적으로 알파벳으로 모두 대문자로 작성하며, 사이를 _로 연결합니다.
+public enum LoginResult {
+	LOGIN_SUCCESS,
+	LOGIN_FAILED
+}

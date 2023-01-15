@@ -1,0 +1,33 @@
+AND		true && 또는 & true = true
+(논리곱)		true && 또는 & false = false
+		false && 또는 & true = false
+		false && 또는 & false = false
+* 피연산자가 모두 true일 경우에만 연산 결과가 true
+
+
+OR		true || 또는 | true = true
+(논리합)		true || 또는 | false = true
+		false || 또는 | true = true
+		false || 또는 | false = false
+* 피연산자 중 하나가 true이면 연산 결과가 true
+
+
+XOR		true ^ true = false
+(배타적 논리합)	true ^ false = true
+		false ^ true = true
+		false ^ false = false
+* 피연산자가 하나는 true이고 
+다른 하나가 false일 경우에만 연산 결과가 true
+
+
+NOT		! true = false
+(논리 부정)	! false = true
+*피연산자의 논리값을 바꿈
+
+
+
+* &&는 앞의 피연산자가 false라면 뒤의 피연산자를 평가하지 않고 바로 false 산출
+* &는 두 피연산자 모두를 평가해서 결과 산출
+
+* ||는 앞의 피연산자가 true면 뒤의 피연산자를 평가하지 않고 바로 true 산출
+* |는 두 피연산자 모두를 평가해서 결과 산출
