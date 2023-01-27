@@ -1,0 +1,27 @@
+필드 선언
+반드시 클래스 블록에서 선언되어야 합니다.
+
+타입 필드명 [ = 초기값] ;
+
+		필드			변수
+선언위치	클래스 선언 블록	생성자, 메소드 선언 블록
+존재 위치	객체 내부에 존재	생성자, 메소드 호출 시에만 존재
+사용 위치	객체 내외부 어디든 사용	생성자, 메소드 블록 내부에서만 사용
+
+
+필드명은 첫 문자를 소문자로 하되, 캐멀 스타일로 하는 것이 관례입니다,
+public class Car {
+	String model = "그랜저";	//고유 데이터 필드
+	int speed = 300;	//상태 데이터 필드
+	boolean start = true;	//상태 데이터 필드
+	Tire tire = new Tire();	//부품 객체 필드
+
+필드 타입별 기본값
+public class Car {
+	String model;	//null
+	int speed;	//0
+	boolean start;	//false
+	Tire tire;	//null
+
+필드 사용
+필드값을 읽고 변경하는것을 말합니다.
