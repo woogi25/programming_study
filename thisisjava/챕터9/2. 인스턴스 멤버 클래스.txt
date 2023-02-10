@@ -1,0 +1,9 @@
+[public] class A {
+	[public | private] class B {
+	}  //인스턴스 멤버 클래스
+}
+
+접근 제한자에 따른 접근 범위
+public class B {} :다른 패키지에서 B 클래스를 사용할 수 있습니다.
+class B {} : 같은 패캐지에서만 B 클래스를 사용할 수 있습니다.
+private class B {} : A 클래스 내부에서만 B 클래스를 사용할 수 있습니다.
