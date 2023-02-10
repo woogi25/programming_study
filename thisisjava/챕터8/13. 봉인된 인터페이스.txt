@@ -1,0 +1,8 @@
+InterfaceA의 자식 인터페이스는 InterfaceB만 가능하고, 그 이외는 자식 인터페이스가
+될 수 없도록 합니다.
+
+public sealed interface InterfaceA permits InterfaceB { ... }
+
+public non-sealed interface InterfaceB extends InterfaceA { ... }
+
+public interface InterfaceC extends InterfaceB { ... }

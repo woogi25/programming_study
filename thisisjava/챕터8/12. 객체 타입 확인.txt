@@ -1,0 +1,4 @@
+if ( vehicle instanceof Bus bus) {
+	//vehicle에 대입된 객체가 Bus일 경우 실행
+}
+
