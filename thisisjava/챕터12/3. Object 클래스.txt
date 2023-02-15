@@ -1,0 +1,40 @@
+클래스를 선언할 때 extends 키워드로 다른 클래스를 상속하지 않으면 암시적으로
+java.lang.Object 클래스를 상속하게 됩니다.
+
+객체 동등 비교
+Object의 equals() 메소드는 객체의 번지를 비교하고 boolean 값을 리턴합니다.
+
+public boolean equals(Object obj)
+두 개체가 동일한 객체라면 true를 리턴하고, 그렇지 않으면 false를 리턴합니다.
+
+객체 해시코드
+객체를 식별하는 정수를 말합니다.
+Object의 hashCode() 메소드는 객체의 메모리 번지를 이용해서 해시코드를 생성하기 때문에
+객체마다 다른 정수값을 리턴합니다.
+두 객체가 동등한지를 비교할 때 주로 사용합니다.
+
+public int hashCode()
+
+
+hashSet은 동등 객체를 중복 저장하지 않습니다.
+
+
+객체 문자 정보
+Object의 toString() 메소드는 '클래스명@16진수해시코드'로 구성된 문자열을 리턴합니다.
+
+레코드 선언
+데이터 전달을 위한 DTO를 작성할 때 반복적으로 사용되는 코드를 줄이기 위해 레코드가 도입되었습니다.
+
+public record Person(String name, int age){
+}
+
+롬복 사용하기
+JDK에 포함된 표준 라이브러리는 아니지만 개발자이 즐겨 쓰는 자동 생성 라이브러리입니다.
+레코드와 마찬가지로 작성할 코드의 양을 줄여줍니다.
+
+class 선언 위에 @Data 어노테이션
+컴파일 과정에서 기본 생성자와 함께 Getter, Setter, hashCode(), equals(), toString()
+메소드가 자동 생성됩니다.
+
+final과 @NonNull의 차이점은 초기화된 final 필드는 변경할 수 없지만, @NonNull은 null이
+아닌 다른 값으로 Setter를 통해 변경할수 있다는 것입니다.
