@@ -1,0 +1,2 @@
+컬렉션 프레임워크는 비동기화된 메소드를 동기화된 메소드로 래핑하는
+Collections의 synchronizedXXX() 메소드를 제공합니다.

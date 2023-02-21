@@ -1,0 +1,15 @@
+1. TreeSet
+이진 트리를 기반으로 한 Set 컬렉션입니다.
+TreeSet에 객체를 저장하면 부모 노드의 객체와 비교해서 낮은 것은 왼쪽 자식 노드,
+높은 것은 오른쪽 자식 노드에 저장합니다.
+
+2. TreeMap
+TreeSet과의 차이점은 키와 값이 저장된 Entry를 저장한다는 점입니다.
+엔트리를 저장하면 키를 기준으로 자동 정렬 됩니다.
+
+Map 타입이 아닌 TreeMap 타입으로 대입한 이유는 검색관련 메소드가 TreeMap에만 정의되어
+있기 때문입니다.
+
+Comparable과 Comparator
+TreeSet과 TreeMap에 저장되어 있는 개체는 
+comparable 인터페이스를 구현하고 있어야 오름차순으로 정렬됩니다. 

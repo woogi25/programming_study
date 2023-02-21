@@ -1,0 +1,13 @@
+객체들을 효율적으로 추가, 삭제, 검색할 수 있도록 관련된 인터페이스와 클래스들을
+java.util 패키지에 포함시켜 놓았는데, 이들을 총칭해서 컬렉션 프레임워크라고 합니다.
+
+인터페이스 분류
+
+Collection	List	순서를 유지하고 저장		ArrayList, Vector,
+			중복 저장 가능			LinkedList
+
+		Set	순서를 유지하지 않고 저장	HashSet,
+			중복 저장 안됨			TreeSet
+
+Map			키와 값으로 구성된 엔트리 저장	HashMap, Hashtable,
+			키는 중복 저장 안됨		TreeMap, Properties
