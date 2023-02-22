@@ -1,0 +1,4 @@
+BaseStream에는 모든 스트림에서 사용할 수 있는 공통 메소드들이 정의되어 있습니다.
+Stream은 객체 요소를 처리하는 스트림이고,
+IntStream, LongStream, DoubleStream은 각각 기본 타입인
+int,long, Double 요소를 처리하는 스트림입니다.
