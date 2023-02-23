@@ -1,0 +1,3 @@
+PrintStream과 PrintWriter는 프린터와 유사하게 출력하는 print(), println(), printf()
+메소드를 가지고 있는 보조 스트림입니다.
+System.out.println()의 out도 PrintStream 타입입니다.
