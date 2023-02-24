@@ -1,0 +1,39 @@
+전송용 프로토콜
+IP 주소로 프로그램들이 통신할 때 약속된 데이터 전송 규약입니다.
+
+인터넷에서 전송용 프로토콜 : TCP, UDP
+1. TCP
+연결형 프로토콜이며, 상대방이 연결된 상태에서 데이터를 주고 받습니다.
+클라이언트가 연결을 요청하고 서버가 수락하면 통신 회선이 고정되고, 데이터가 전달됩니다.
+보낸 데이터가 순서대로 전달되며 손실이 발생하지 않습니다.
+TCP는 IP와 함께 사용해서 TCP/IP라고도 합니다.
+TCP는 웹 브라우저가 웹 서버에 연결할 때 사용되며 이메일 전송, 파일 전송, DB연동에도 사용됩니다.
+
+TCP 서버
+TCP 서버 프로그램을 개발하려면 우선 ServerSocket 객체를 생성해야 합니다.
+
+1.
+ServerSocket serversocket = new ServerSocket(50001);
+
+2.
+ServerSocket serverSocket = new ServerSocket();
+serverSocket.bind(new InetSocketAddress(50001));
+
+만약 Port가 이미 다른 프로그램에서 사용 중이라면 BindException이 발생합니다.
+이 경우에는 다른 Port로 바인딩하거나 Port를 사용 중인 프로그램을 종료하고 다시 실행하면 됩니다.
+
+ServerSocket이 생성되었다면 연결 요청수락을 위해 accept() 메소드를 실행합니다.
+
+서버를 종료하려면 ServerSocket의 close() 메소드를 호출해서 Port 번호를
+언바이딩시켜야 다른 프로그램에서 해당 Port 번호를 재사용할 수 있습니다.
+
+
+TCP 클라이언트
+클라이언트가 서버에 연결 요청을 하려면 Socket 객체를 생성할 때 생성자 매개값으로
+서버 IP주소와 Port 번호를 제공하면 됩니다.
+로컬 컴퓨터에서 실행하는 서버로 연결 요청을 할 경우는 IP주소 대신 localhost를 사용할 수 있습니다.
+
+Socket socket = new Socket("IP", 50001);
+
+서버와 연결된 후에 클라이언트에서 연결을 끊고 싶을 때
+socket.close();

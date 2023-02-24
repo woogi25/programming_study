@@ -1,0 +1,3 @@
+자바는 IP주소를 java.net 패키지의 IntetAddress로 표현합니다.
+InetAddress를 이용하면 로컬 컴퓨터의 IP 주소를 얻을 수 있고,
+도메인 이름으로 DNS에서 검색한 후 IP주소를 가져올 수도 있습니다.

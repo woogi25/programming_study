@@ -1,0 +1,15 @@
+java.io 패키지와 java.nio.file 패키지는 파일과 디렉토리 정보를 가지고 있는
+File과 Files 클래스를 제공합니다.
+Files는 File을 개선한 클래스로, 좀 더 많은 기능이 있습니다.
+
+File 클래스
+객체 생성 방법
+
+File file = new File("경로");
+
+
+Files 클래스
+정적 메소드로 구성되어 있기 때문에 File 클래스처럼 객체로 만들 필요가 없습니다.
+매개값으로 Path 객체를 받고, 정적 메소드인 get() 메소드로 다음과 같이 얻습니다.
+
+Path path = Paths.get(String first, ... )
